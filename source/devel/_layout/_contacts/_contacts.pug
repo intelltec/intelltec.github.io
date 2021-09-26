@@ -1,0 +1,45 @@
+mixin contacts()
+    .contacts&attributes(attributes)
+        .contacts__blur.box.box_blur
+        .contacts__left
+            .contacts__info
+                .contacts__infoHeader Наименование фирмы:
+                    b  Общество с ограниченной ответственностью «Стэнс» (ООО «Стэнс»)
+                ul.contacts__list
+                    li.contacts__listItem
+                        img(src="./assets/image/contacts/map.png").contacts__icon
+                        .contacts__text Юридический адрес:
+                            br
+                            b  660077, г. Красноярск, ул. Весны, дом 23, помещение №9
+                    li.contacts__listItem
+                        img(src="./assets/image/contacts/map.png").contacts__icon
+                        .contacts__text Фактический адрес:
+                            br
+                            b  660049, г. Красноярск, ул. Марковского, 19
+                    li.contacts__listItem
+                        img(src="./assets/image/contacts/director.png").contacts__icon
+                        .contacts__text Генеральный директор:
+                            br
+                            b  Филаткин Андрей Николаевич (на основании Устава)
+                    li.contacts__listItem.contacts__listItem_
+                        img(src="./assets/image/contacts/call.png").contacts__icon
+                        .text Телефон, факс:
+                            b  (391) 266-12-90
+                    li.contacts__listItem.contacts__listItem_
+                        img(src="./assets/image/contacts/mail.png").contacts__icon
+                        .contacts__text Электронная почта:
+                            b  661290@mail.ru
+                    li.contacts__listItem.contacts__listItem_
+                        img(src="./assets/image/contacts/innkpp.png").contacts__icon
+                        .contacts__text ИНН / КПП:
+                            b  2465050520 / 246501001
+        .contacts__right
+            form.contacts__form
+                input(type="text" placeholder="Ваше имя").contacts__formField.formField
+                input(type="text" placeholder="Название организации").contacts__formField.formField
+                input(type="email" placeholder="Email").contacts__formField.formField
+                input(type="tel" placeholder="Телефон").contacts__formField.formField
+                textarea(placeholder="Суть обращения").contacts__formField.contacts__formField_textarea.formField
+                .contacts__formButtons
+                    button(type="submit").contacts__formBtn.formBtn.formBtn_submit Отправить
+                    button(type="reset").contacts__formBtn.formBtn Очистить

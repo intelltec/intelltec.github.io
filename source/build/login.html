@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>Вход для клиентов</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header z-i">
+        <nav class="nav z-i">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="login.html">Вход для клиентов</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="grid z-i">
+          <form class="login">
+            <div class="login__wrap">
+              <div class="login__blur box box_blur"></div>
+              <label class="login__label">
+                <div class="login__text">Логин</div>
+                <div class="login__inputWrap">
+                  <input class="login__input formField" type="text"/><img class="login__icon" src="./assets/image/login/login.png"/>
+                </div>
+              </label>
+              <label class="login__label">
+                <div class="login__text">Пароль</div>
+                <div class="login__inputWrap formFieldBlur">
+                  <input class="login__input formField" type="password"/><img class="login__icon" src="./assets/image/login/pass.png"/>
+                </div>
+              </label>
+              <button class="login__btn login__btn_submit formBtn formBtn_submit" type="submit">Войти</button>
+              <button class="login__btn login__btn_reset formBtn" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <div class="nextParticle"><img class="nextParticle__image" src="./assets/image/nextParticle/particle.png"/></div>
+    </div>
+    <script src="./index.min.js"></script>
+  </body>
+</html>

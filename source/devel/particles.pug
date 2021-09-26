@@ -1,0 +1,16 @@
+extends ./_html
+block title
+    title Главная
+block body
+    .app
+        header.header.z-i
+            +nav.z-i
+        main.main
+            .grid
+                block page
+                    +tabs
+        +particles
+
+block script
+    script(src='./assets/libs/libs.min.js')
+    script(src='./particles.js')

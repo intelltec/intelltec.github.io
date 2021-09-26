@@ -1,0 +1,56 @@
+.contacts
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  //flex-flow: row nowrap
+  padding: 2.5em 2em
+  position: relative
+  flex-wrap: nowrap
+  flex-direction: column
+  +mr_($xs)
+    flex-direction: row
+.contacts__left
+  flex-shrink: 0
+  padding-right: 0.5em
+  margin-bottom: 2em
+  +mr_($xs)
+    margin-bottom: 0
+    width: 60%
+.contacts__right
+  flex-shrink: 0
+  padding-left: 0.5em
+  +mr_($xs)
+    width: 40%
+
+.contacts__info
+  letter-spacing: 0.06em
+.contacts__form
+
+.contacts__list
+  list-style: none
+  margin: 1.2em 0 0
+  padding: 0
+.contacts__listItem
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  margin-bottom: 0.7em
+.contacts__listItem_
+  margin-top: 1.2em
+.contacts__icon
+  flex-shrink: 0
+  padding: 0.2em 0.9em 0 0.2em
+.contacts__text
+  flex-grow: 1
+
+.contacts__formButtons
+  padding-top: 0.6em
+.contacts__formField
+  margin-bottom: 1em
+.contacts__formBtn
+
+.contacts__formField_textarea
+  min-height: 9.8em
+  resize: vertical
+
+.contacts__infoHeader

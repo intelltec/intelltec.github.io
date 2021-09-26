@@ -1,0 +1,52 @@
+.tabs
+  font-size: 1rem
+.tabs__links
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  +mr_($xs)
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+
+
+.tabs__link
+  cursor: pointer
+  font-size: 0.875em
+  font-family: "Magistral Regular", sans-serif
+  text-transform: uppercase
+  text-decoration: none
+  padding: 0.9em 1.9em
+  letter-spacing: 0.6px
+  display: block
+  text-align: center
+  margin-bottom: 0.5em
+  +mr_($xs)
+    margin-right: 1em
+  .tabs__linkText
+    background: -webkit-linear-gradient(#fff, #c0c0c0)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+  &_active
+    font-size: 1.188em
+    font-family: "Magistral Bold", sans-serif
+    padding: 0.7em 1.6em
+    .tabs__linkText
+      background: -webkit-linear-gradient(#fff, #afafaf)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+.tabs__contents
+  position: relative
+  overflow: hidden
+.tabs__content
+  position: absolute !important
+  right: 120%
+  left: -120%
+  top: 0
+  padding: 2.2em
+  &_active
+    position: relative !important
+    right: 0
+    left: 0
+    display: block
