@@ -1,0 +1,16 @@
+mixin login()
+    form.login&attributes(attributes)
+        .login__wrap
+            .login__blur.box.box_blur
+            label.login__label
+                .login__text Логин
+                .login__inputWrap
+                    input(type="text").login__input.formField
+                    img(src="./assets/image/login/login.png").login__icon
+            label.login__label
+                .login__text Пароль
+                .login__inputWrap.formFieldBlur
+                    input(type="password").login__input.formField
+                    img(src="./assets/image/login/pass.png").login__icon
+            button(type="submit").login__btn.login__btn_submit.formBtn.formBtn_submit Войти
+            button(type="reset").login__btn.login__btn_reset.formBtn Отмена

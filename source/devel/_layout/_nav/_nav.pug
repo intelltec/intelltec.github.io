@@ -1,0 +1,8 @@
+mixin nav()
+    - var nav = [{text: 'Главная', link: 'index.html'},{text: 'Контакты', link: 'contacts.html'},{text: 'Вход для клиентов', link: 'login.html'}]
+    nav.nav&attributes(attributes)
+        ul.nav__list
+            each item in nav
+                li.nav__item
+                    a(href= item.link).nav__link= item.text
+

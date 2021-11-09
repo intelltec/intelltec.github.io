@@ -1,0 +1,12 @@
+extends ./_html
+block title
+    title Главная
+block body
+    .app
+        header.header.z-i
+            +nav.z-i
+        main.main
+            .grid
+                block page
+                    +tabs
+        +nextParticle
