@@ -26,7 +26,7 @@
 
 .tabs__link {
   cursor: pointer;
-  font-size: 0.875em;
+  font-size: 0.813em;
   font-family: "Magistral Regular", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -43,9 +43,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .tabs__link_active {
-    font-size: 1.188em;
-    font-family: "Magistral Bold", sans-serif;
-    padding: 0.7em 1.6em; }
+    font-family: "Magistral Bold", sans-serif; }
     .tabs__link_active .tabs__linkText {
       background: -webkit-linear-gradient(#fff, #afafaf);
       -webkit-background-clip: text;
@@ -394,6 +392,10 @@ body {
   width: 100%;
   max-width: 44.5em;
   margin: 0 auto; }
+  .grid__ {
+    display: none; }
+    .grid__active {
+      display: block; }
 
 .formField {
   background-color: rgba(0, 0, 0, 0.2);

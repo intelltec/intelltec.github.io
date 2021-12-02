@@ -1,5 +1,5 @@
 mixin nav()
-    - var nav = [{text: 'Главная', link: 'index.html'},{text: 'Контакты', link: 'contacts.html'},{text: 'Вход для клиентов', link: 'login.html'}]
+    - var nav = [{text: 'Главная', link: '#home'},{text: 'Контакты', link: '#contacts'},{text: 'Вход для клиентов', link: '#login'}]
     nav.nav&attributes(attributes)
         ul.nav__list
             each item in nav

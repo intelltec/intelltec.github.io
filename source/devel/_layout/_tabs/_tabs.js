@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             linkIsActive.classList.remove('tabs__link_active');
             linkToActive.classList.add('tabs__link_active');
         }
-    })
+    });
     contentSize();
     window.addEventListener('resize', contentSize);
     function contentSize() {
