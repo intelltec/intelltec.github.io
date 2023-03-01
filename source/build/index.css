@@ -253,32 +253,22 @@
   z-index: 0;
   opacity: 0.2; }
 
-.nextParticle {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 0;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-  .nextParticle.active {
-    opacity: 1; }
+#container {
+  width: 1003px;
+  height: 610px;
+  margin-top: 50px;
+  margin-left: -501px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  overflow: hidden; }
 
-.nextParticle__image {
-  display: none; }
+#testCanvas {
+  background: #000; }
+
+.shadow {
+  -webkit-box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 20px #000; }
 
 html {
   font-size: 16px; }

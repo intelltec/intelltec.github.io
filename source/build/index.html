@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+img(src='./assets/image/proton/particle.png').proton_image<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
@@ -96,8 +96,15 @@
           </form>
         </div>
       </main>
-      <div class="nextParticle"><img class="nextParticle__image" src="./assets/image/nextParticle/particle.png"/></div>
+      <div class="shadow" id="container">
+        <canvas id="testCanvas"/>
+      </div>
     </div>
+    <script src="./lib/proton.min.js"></script>
+    <script src="./lib/requestAnimationFrame.min.js"></script>
+    <script src="./lib/PxLoader.min.js"></script>
+    <script src="./lib/stats.min.js"></script>
+    <script src="./lib/PxLoaderImage.min.js"></script>
     <script src="./index.min.js"></script>
   </body>
 </html>
