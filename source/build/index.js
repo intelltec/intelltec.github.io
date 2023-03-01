@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
         logoZone = [];
         var logo = [];
         var loader = new PxLoader();
-        logo[0] = loader.addImage('assets/image/proton/particle.png');
-        logo[1] = loader.addImage('assets/image/proton/particle.png');
+        logo[0] = loader.addImage('assets/image/nextParticle/particle.png');
+        logo[1] = loader.addImage('assets/image/nextParticle/particle.png');
 
         loader.addCompletionListener(function() {
 
