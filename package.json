@@ -11,26 +11,27 @@
 	"author": "DeathMetallDrummer@gmail.com",
 	"license": "ISC",
 	"devDependencies": {
-		"browser-sync": "^2.26.14",
-		"del": "^5.0.0",
+		"browser-sync": "^2.28.1",
+		"del": "^5.1.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^6.1.0",
-		"gulp-clean-css": "^4.2.0",
+		"gulp-clean-css": "^4.3.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-jade": "^1.1.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-pug": "^4.0.1",
 		"gulp-rename": "^1.4.0",
-		"gulp-sass": "^4.0.2",
+		"gulp-sass": "^4.1.1",
 		"gulp-uglify": "^3.0.2",
 		"node-sass": "^4.14.1",
-		"yarn": "^1.17.3"
+		"yarn": "^1.22.19"
 	},
 	"repository": "https://github.com/Deathmetalldrummer/Archetype.git",
 	"dependencies": {
 		"jquery": "^3.5.1",
 		"jquery-validation": "^1.19.3",
 		"particles.js": "^2.0.0",
+		"proton-engine": "^5.4.5",
 		"slick-carousel": "^1.8.1"
 	}
 }

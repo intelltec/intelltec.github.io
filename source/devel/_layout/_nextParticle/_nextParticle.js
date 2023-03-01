@@ -1,4 +1,5 @@
 //#include("./_nextParticleLib.js");
+
 document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
     var img = document.querySelector('.nextParticle__image');
     var particle = document.querySelector('.nextParticle');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
         particleGap: window.innerWidth > 1200 ? 2 : 1,
         particleSize: 2,
         width: window.innerWidth,
-        height: window.innerHeight
+        height: window.innerHeight,
     });
     particleStart();
 
@@ -65,4 +66,6 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
     }
 
 });
+
+
 
