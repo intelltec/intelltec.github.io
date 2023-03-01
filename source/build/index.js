@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
         context = canvas.getContext('2d');
 
         imageDatas = [];
-        rect = new Proton.Rectangle((canvas.width - canvas.width / 2) / 2, (canvas.height - canvas.height / 2) / 2, canvas.width, canvas.height);
+        rect = new Proton.Rectangle((canvas.width - (canvas.width / 2)) / 2, (canvas.height - (canvas.height / 2)) / 2, canvas.width, canvas.height);
         rect2 = new Proton.Rectangle(rect.x - 100, rect.y - 100, rect.width + 200, rect.height + 200);
         randomBehaviour = new Proton.RandomDrift(0, 0, 0.05);
         var rectZone = new Proton.RectZone(rect2.x, rect2.y, rect2.width, rect2.height);
