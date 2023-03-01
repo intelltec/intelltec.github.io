@@ -15,19 +15,19 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
     function main() {
 
         canvas = document.getElementById("testCanvas");
-        canvas.width = 1003;
-        canvas.height = 610;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
         context = canvas.getContext('2d');
 
         imageDatas = [];
-        rect = new Proton.Rectangle((canvas.width - 455) / 2, (canvas.height - 200) / 2, 455, 200);
+        rect = new Proton.Rectangle((canvas.width - canvas.width / 2) / 2, (canvas.height - canvas.height / 2) / 2, canvas.width, canvas.height);
         rect2 = new Proton.Rectangle(rect.x - 100, rect.y - 100, rect.width + 200, rect.height + 200);
         randomBehaviour = new Proton.RandomDrift(0, 0, 0.05);
         var rectZone = new Proton.RectZone(rect2.x, rect2.y, rect2.width, rect2.height);
         crossBehaviour = new Proton.CrossZone(rectZone, 'bound');
         gravityWellBehaviour = new Proton.GravityWell({
-            x: canvas.width / 2,
-            y: canvas.height / 2
+            x: canvas.width ,
+            y: canvas.height
         }, 0, 0);
 
         canvas.addEventListener('mousedown', mouseDownHandler, false);
