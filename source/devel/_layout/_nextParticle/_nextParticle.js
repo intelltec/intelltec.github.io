@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
     var nextParticle = new NextParticle({
         image: img,
         addTimestamp: true,
-        mouseForce: 200,
+        mouseForce: 10,
         gravity: 0.07,
         particleGap: window.innerWidth > 1200 ? 2 : 1,
         particleSize: 2,

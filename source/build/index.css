@@ -371,9 +371,6 @@ body {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 0, 0, 0) 60%); }
 
 .main {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +383,7 @@ body {
   padding: 2em 1em; }
   @media (min-width: 640px) {
     .main {
-      padding: 4em 2em 1em; } }
+      padding: 1em 2em 1em; } }
 
 .grid {
   width: 100%;
